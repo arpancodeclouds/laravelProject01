@@ -26,11 +26,13 @@
             <div ng-app ng-init="checked = false">
                 <form class="form-signin" action="{{ route('login') }}" method="post" name="form">
                     @csrf
-                    <label for="fullname">Full
-                        name</label><input class="form-styling" type="text" name="username" placeholder="" /> <label
-                        for="password">Password</label> <input class="form-styling" type="password" name="password"
-                        placeholder="" /> <input type="checkbox" id="checkbox" /> <label for="checkbox"><span
-                            class="ui"></span>Keep me signed in</label>
+                    <label for="fullname">Full name</label>
+                    <input class="form-styling" type="text" name="username" placeholder="" />
+                    <label for="password">Password</label>
+                    <input class="form-styling" type="password" name="password" placeholder="" />
+                    <input type="checkbox" id="checkbox" name="rememberMe" value="1" />
+                    <label for="checkbox">
+                    <span class="ui"></span>Keep me signed in</label>
                     <div class="btn-animate"> <button class="btn-signin">Login to your account</button> </div>
                 </form>
                 <form class="form-signup" action="" method="post" name="form"> <label for="fullname">Full

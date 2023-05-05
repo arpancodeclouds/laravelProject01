@@ -2061,6 +2061,7 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+alert('Hi prianka');
 $(function () {
   $(".btn").click(function () {
     $(".form-signin").toggleClass("form-signin-left");
